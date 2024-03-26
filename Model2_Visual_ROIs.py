@@ -4,7 +4,7 @@ import cv2
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Open the video file
-video_capture = cv2.VideoCapture('your_video_file.mp4')
+video_capture = cv2.VideoCapture('referral-marketing-how-to-approach-referral-partners_MLuMohuj.mp4')
 
 # Get frames per second (fps) of the video
 fps = int(video_capture.get(cv2.CAP_PROP_FPS))
@@ -13,13 +13,13 @@ fps = int(video_capture.get(cv2.CAP_PROP_FPS))
 out_video = cv2.VideoWriter('output_video.avi', cv2.VideoWriter_fourcc(*'XVID'), fps, (int(video_capture.get(3)), int(video_capture.get(4))))
 
 # Initialize an audio recorder
-audio = cv2.VideoCapture('your_video_file.mp4')
+audio = cv2.VideoCapture('referral-marketing-how-to-approach-referral-partners_MLuMohuj.mp4')
 
 # Get the audio codec
 fourcc = int(audio.get(cv2.CAP_PROP_FOURCC))
 
-# Get the number of audio channels
-channels = audio.get(cv2.CAP_PROP_CHANNEL_COUNT)
+# # Get the number of audio channels
+# channels = audio.get(cv2.CAP_PROP_CHANNEL_COUNT)
 
 # Get the sample rate
 sample_rate = int(audio.get(cv2.CAP_PROP_FRAME_WIDTH))

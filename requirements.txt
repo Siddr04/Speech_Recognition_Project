@@ -1,0 +1,6 @@
+moviepy==1.0.3
+opencv_contrib_python_headless==4.9.0.80
+opencv_python==4.9.0.80
+opencv_python_headless==4.9.0.80
+pyAudioAnalysis==0.3.14
+pyAudioAnalysis==0.3.14

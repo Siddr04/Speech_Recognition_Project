@@ -20,7 +20,7 @@ def analyze_audio(audio_file):
         print("Speech segment:", seg)
 
 # Video file path
-video_file = 'your_video_file.mp4'
+video_file = 'referral-marketing-how-to-approach-referral-partners_MLuMohuj.mp4'
 # Audio file path
 audio_file = 'output_audio.wav'
 
