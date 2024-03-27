@@ -90,10 +90,10 @@ model = tf.keras.Sequential([
 ])
 
 # Compile the model
-model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
 
 # Train the model
-model.fit(X_train, y_train_categorical, epochs=10, batch_size=32, validation_split=0.2)
+model.fit(X_train, y_train_categorical, epochs=30, batch_size=32, validation_split=0.2)
 
 # Evaluate the model
 test_loss, test_accuracy = model.evaluate(X_test, y_test_categorical)
